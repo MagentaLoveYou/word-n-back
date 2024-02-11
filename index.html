@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./index.js"></script>
+    <title>main</title>
+</head>
+<body class="container">
+  <header>
+      <div class="wrapper">
+        <div class="main">
+          <span id="prompt"></span> 
+          <div id="correct"></div>
+        </div>
+
+        <div class="btn">
+          <div class="rep">
+            <button class="glow-on-hover" type="button" id="repeat-button">#RE</button>
+            <span class="score-buttons" id="repeat-correct">Correct: </span> 
+            <span class="score-buttons" id="repeat-incorrect">Incorrect: </span> 
+          </div>
+          <div class="ctrl">
+            <button class="glow-on-hover" type="button" id="start-button">START</button>
+            <button class="glow-on-hover" type="button" id="stop-button">STOP</button>
+            <button class="glow-on-hover" type="button" id="reset-button">RESET</button>
+          </div>
+
+        <div class="options">
+          <div id="score"></div>
+          <label for="level-input">Level:</label>
+          <input type="text" id="level-input">
+          <button class="glow-on-hover" type="button" id="set-level-button">Set Level</button>
+        </div>
+        </div>
+
+      </div>
+  </header>
+</body>
+</html>
