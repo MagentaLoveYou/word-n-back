@@ -14,7 +14,7 @@ body {
 body {
     margin:0;
     padding:0;
-    background:url("https://abrakadabra.fun/uploads/posts/2022-01/1641870376_29-abrakadabra-fun-p-atmosfernii-fon-na-rabochii-stol-31.jpg") no-repeat center center fixed;
+    background:url("vedmak.jpeg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -30,13 +30,13 @@ header {
     border: 10px solid #000;
 }
 
-header {
+/* header {
     background: url("vedmak.jpeg") no-repeat center center fixed;
     background-size: contain;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-}
+} */
 
 .wrapper {
     display: flex;
