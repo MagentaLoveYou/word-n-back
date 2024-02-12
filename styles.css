@@ -31,12 +31,12 @@ header {
 }
 
 header {
-    background:url("https://gas-kvas.com/uploads/posts/2023-01/1673339848_gas-kvas-com-p-anime-risunki-gorizontalnie-8.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url("bg.jpg") no-repeat center center fixed;
+    background-size: contain;
 }
+
+
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -103,11 +103,11 @@ header {
 
 #prompt {
     font-size: 30px;
-    color: #000;
+    color: white;
 }
 
 .score-buttons {
-    color: black;
+    color: white;
     font-weight: 100;
 }
 

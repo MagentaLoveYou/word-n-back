@@ -12,9 +12,7 @@ $(document).ready(function() {
     var items_3 = ['āgnian', 'beadu', 'dryht', 'ēacan', 'flēotan', 'gamol', 'hafola', 'ierfan', 'lēanian', 'māðum']; 
     items_list = [items_1, items_2, items_3]
 
-    async function make_list_of_words() {
-        var randomItems = Math.floor(Math.random() * items_list.length);
-        var items = items_list[randomItems]
+    async function make_list_of_words(items) {
         // var items = ['PASSION', 'LIBERTY'];
         var randomIndex = Math.floor(Math.random() * items.length);
         level_count++;
@@ -49,7 +47,7 @@ $(document).ready(function() {
         }
     }
 
-    async function n_back() {
+    async function n_back(items) {
         level_lenght = 20 + level_default ** 2
         if (level_count === level_lenght) {
             $("#prompt").text('Congrats!');
@@ -62,7 +60,7 @@ $(document).ready(function() {
             } else {
                 flag_check = true;
             };
-            text = await make_list_of_words();
+            text = await make_list_of_words(items);
             $("#prompt").empty();
             await showTextLetterByLetter(text);
             // $("#prompt").text(text);
@@ -93,7 +91,9 @@ $(document).ready(function() {
 
     $("#start-button").click(function() {
         if (flag_start) {
-            intervalId = setInterval(n_back, 2500);
+            var randomItems = Math.floor(Math.random() * items_list.length);
+            var items = items_list[randomItems]
+            intervalId = setInterval(n_back, 2500, items);
             flag_start = false;
         };
     });
