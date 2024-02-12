@@ -33,6 +33,9 @@ header {
 header {
     background: url("vedmak.jpeg") no-repeat center center fixed;
     background-size: contain;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .wrapper {
