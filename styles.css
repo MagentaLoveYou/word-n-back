@@ -31,11 +31,9 @@ header {
 }
 
 header {
-    background: url("bg.jpg") no-repeat center center fixed;
+    background: url("vedmak.jpeg") no-repeat center center fixed;
     background-size: contain;
 }
-
-
 
 .wrapper {
     display: flex;
