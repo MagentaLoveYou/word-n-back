@@ -10,13 +10,14 @@ $(document).ready(function() {
     var items_1 = ['PASSION', 'ETERNITY', 'LIBERTY', 'TRANQUILITY', 'DESTINY', 'FANTASTIC', 'MYNAME', 'DELAY', 'METEOR', 'HAMMER']; 
     var items_2 = ['десница', 'ланиты', 'рамена', 'чресла', 'на бале', 'зерцало', 'забрало', 'ендова', 'светец', 'медоварение']; 
     var items_3 = ['āgnian', 'beadu', 'dryht', 'ēacan', 'flēotan', 'gamol', 'hafola', 'ierfan', 'lēanian', 'māðum']; 
-    items_list = [items_1, items_2, items_3]
+    var items_4 = ['мандрагор', 'поскрип', 'брукса', 'антимоний', 'красавка', 'конопля', 'драконья кровь', 'виверна', 'гарпия', 'суккуб', 'леший', 'джинн', 'сарасти', 'волколак', 'сильван']; 
+    items_list = [items_4]
 
     async function make_list_of_words(items) {
         // var items = ['PASSION', 'LIBERTY'];
         var randomIndex = Math.floor(Math.random() * items.length);
         level_count++;
-            if (randomIndex === 1 || randomIndex === 3 || randomIndex === 5 || randomIndex === 7) {
+            if (randomIndex === 1 || randomIndex === 3 || randomIndex === 5) {
                 if (previous.length > level_default) {
                         var text = previous[previous.length - 1 - level_default + 1] ;
                         previous.push(text);
