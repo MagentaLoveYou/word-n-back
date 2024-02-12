@@ -16,7 +16,7 @@ $(document).ready(function() {
         // var items = ['PASSION', 'LIBERTY'];
         var randomIndex = Math.floor(Math.random() * items.length);
         level_count++;
-            if (randomIndex === 1 || randomIndex === 3 || randomIndex === 5 || randomIndex === 7 || randomIndex === 9) {
+            if (randomIndex === 1 || randomIndex === 3 || randomIndex === 5 || randomIndex === 7) {
                 if (previous.length > level_default) {
                         var text = previous[previous.length - 1 - level_default + 1] ;
                         previous.push(text);
