@@ -53,7 +53,7 @@ $(document).ready(function() {
         if (level_count > level_lenght) {
             $("#prompt").text('Congrats!');
             var percent = String(correct / (correct + incorrect) * 100 + "%")
-            $("#prompt").text(percent.slice(0, 11));
+            $("#prompt").text(percent.slice(0, 4));
             clearInterval(intervalId);
         } else {
             if (flag_check) {
