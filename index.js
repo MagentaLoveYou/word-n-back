@@ -50,10 +50,10 @@ $(document).ready(function() {
 
     async function n_back(items) {
         level_lenght = 20 + level_default ** 2
-        if (level_count === level_lenght) {
+        if (level_count > level_lenght) {
             $("#prompt").text('Congrats!');
-            var percent = "Percent: " + String(correct / (correct + incorrect) * 100 + "%")
-            $("#score").text(percent);
+            var percent = String(correct / (correct + incorrect) * 100 + "%")
+            $("#prompt").text(percent.slice(0, 11));
             clearInterval(intervalId);
         } else {
             if (flag_check) {
